@@ -162,12 +162,12 @@ public interface FOOLVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitFunExp(FOOLParser.FunExpContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code this}
+	 * Visit a parse tree produced by the {@code methodExp}
 	 * labeled alternative in {@link FOOLParser#value}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitThis(FOOLParser.ThisContext ctx);
+	T visitMethodExp(FOOLParser.MethodExpContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code new}
 	 * labeled alternative in {@link FOOLParser#value}.
@@ -176,10 +176,10 @@ public interface FOOLVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitNew(FOOLParser.NewContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code methodExp}
+	 * Visit a parse tree produced by the {@code this}
 	 * labeled alternative in {@link FOOLParser#value}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitMethodExp(FOOLParser.MethodExpContext ctx);
+	T visitThis(FOOLParser.ThisContext ctx);
 }

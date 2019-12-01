@@ -178,7 +178,7 @@ public class FOOLBaseVisitor<T> extends AbstractParseTreeVisitor<T> implements F
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitThis(FOOLParser.ThisContext ctx) { return visitChildren(ctx); }
+	@Override public T visitMethodExp(FOOLParser.MethodExpContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -192,5 +192,5 @@ public class FOOLBaseVisitor<T> extends AbstractParseTreeVisitor<T> implements F
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitMethodExp(FOOLParser.MethodExpContext ctx) { return visitChildren(ctx); }
+	@Override public T visitThis(FOOLParser.ThisContext ctx) { return visitChildren(ctx); }
 }

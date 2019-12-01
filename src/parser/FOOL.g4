@@ -59,9 +59,9 @@ value  :  INTEGER                           #intVal
       | IF cond=exp THEN CLPAR thenBranch=exp CRPAR ELSE CLPAR elseBranch=exp CRPAR  #ifExp /* Mettendo l'else facoltativo ha un ramo che non produce un risultato */
       | ID                                                                           #varExp
       | ID ( LPAR (exp (COMMA exp)* )? RPAR )                                        #funExp
+      | (ID | THIS) POINT ID ( LPAR (exp (COMMA exp)* )? RPAR )	  					 #methodExp        
+      | NEW ID LPAR(exp (COMMA exp)*)?RPAR		                                 	 #new      
       | THIS										                                 #this
-      | NEW ID LPAR(exp (COMMA exp)*)?RPAR		                                 #new
-      | (ID | THIS) POINT ID ( LPAR (exp (COMMA exp)* )? RPAR )	  					 #methodExp  
       ; 
 				
 

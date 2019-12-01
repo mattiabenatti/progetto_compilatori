@@ -1,2 +1,2 @@
-class A(){int g() 32;}; class B extends A(int ){int g()22;}; let A c=new B(); int d=13; in print(c.g());
+class A(int x){int g() x;}; class B extends A(){int g()x+1;}; let A c=new B(10); int d=13; in print(c.g());
 //let int f(int n) if n==0 then {0} else {if n==1 then {1} else {f(n-1)+1}}; in print(f(11));
