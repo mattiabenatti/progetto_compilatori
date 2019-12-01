@@ -1,1 +1,1 @@
-"# Progetto Compilatori ed Interpetri"
+# Progetto Compilatori ed Interpetri
